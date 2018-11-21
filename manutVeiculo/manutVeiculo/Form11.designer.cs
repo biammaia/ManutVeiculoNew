@@ -349,6 +349,7 @@
             this.MaximizeBox = false;
             this.Name = "Form11";
             this.Text = "Consulta Clientes";
+            this.Load += new System.EventHandler(this.Form11_Load);
             this.gpbInfoPessoal.ResumeLayout(false);
             this.gpbInfoPessoal.PerformLayout();
             this.gpbEndereco.ResumeLayout(false);

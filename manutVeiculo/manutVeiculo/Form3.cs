@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
@@ -41,6 +42,11 @@ namespace manutVeiculo
             {
                 this.Close();
             }
+        }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
@@ -31,6 +32,11 @@ namespace manutVeiculo
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form11_Load(object sender, EventArgs e)
         {
 
         }
