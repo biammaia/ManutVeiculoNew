@@ -22,7 +22,7 @@ namespace manutVeiculo
         private string sexo;
         private bool adicionado = false;
         private bool existe = false;//teste teste
-        private int tchau;
+        private int hello;
 
         public bool adicionou()
         {
