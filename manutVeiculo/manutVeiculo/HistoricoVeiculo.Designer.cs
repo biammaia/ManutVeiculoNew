@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form9
+    partial class HistoricoVeiculo
     {
         /// <summary>
         /// Required designer variable.

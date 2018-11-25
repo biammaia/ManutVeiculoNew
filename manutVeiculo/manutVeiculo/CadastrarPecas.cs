@@ -11,21 +11,11 @@ using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form9 : Form
+    public partial class CadastrarPecas : Form
     {
-        public Form9()
+        public CadastrarPecas()
         {
             InitializeComponent();
-        }
-
-        private void Form9_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)

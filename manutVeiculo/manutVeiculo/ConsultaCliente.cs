@@ -11,9 +11,9 @@ using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form11 : Form
+    public partial class ConsultaCliente : Form
     {
-        public Form11()
+        public ConsultaCliente()
         {
             InitializeComponent();
         }

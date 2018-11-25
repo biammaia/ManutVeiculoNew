@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form2
+    partial class CadastrarCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -418,7 +418,7 @@
             this.lbModelo.Size = new System.Drawing.Size(48, 13);
             this.lbModelo.TabIndex = 1;
             this.lbModelo.Text = "Modelo: ";
-            this.lbModelo.Click += new System.EventHandler(this.lbModelo_Click);
+            
             // 
             // lbMarca
             // 

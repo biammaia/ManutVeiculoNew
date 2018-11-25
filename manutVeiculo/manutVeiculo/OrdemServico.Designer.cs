@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form3
+    partial class OrdemServico
     {
         /// <summary>
         /// Required designer variable.

@@ -11,19 +11,29 @@ using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form6 : Form
+    public partial class ConsultaTrocas : Form
     {
-        public Form6()
+        public ConsultaTrocas()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Form7_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja cancelar essa operação?", "Confirmação",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
@@ -34,6 +44,13 @@ namespace manutVeiculo
             {
                 this.Close();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var form11 = new ConsultaCliente();
+            form11.ShowDialog();
+            //this.Close();
         }
     }
 }

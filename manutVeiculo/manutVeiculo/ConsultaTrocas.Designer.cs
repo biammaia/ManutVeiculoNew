@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form7
+    partial class ConsultaTrocas
     {
         /// <summary>
         /// Required designer variable.

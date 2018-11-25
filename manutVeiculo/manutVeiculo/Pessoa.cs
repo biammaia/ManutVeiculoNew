@@ -9,6 +9,7 @@ namespace manutVeiculo
     class Pessoa
     {
         private int id;
+        private String cpf;
         private String nome;
         private String sexo;
         private String rua;
@@ -19,9 +20,10 @@ namespace manutVeiculo
         private String uf;
         private Veiculo veiculo;
 
-        public Pessoa(int id, string nome, string sexo, string rua, string bairro, int numero, string cep, string cidade, string uf, Veiculo veiculo)
+        public Pessoa(int id, string cpf, string nome, string sexo, string rua, string bairro, int numero, string cep, string cidade, string uf, Veiculo veiculo)
         {
             this.id = id;
+            this.cpf = cpf;
             this.nome = nome;
             this.sexo = sexo;
             this.rua = rua;
@@ -34,6 +36,7 @@ namespace manutVeiculo
         }
 
         public int Id { get => id; set => id = value; }
+        public string Cpf { get => cpf; set => cpf = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Sexo { get => sexo; set => sexo = value; }
         public string Rua { get => rua; set => rua = value; }
