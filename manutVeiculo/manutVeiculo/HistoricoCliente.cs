@@ -7,29 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form7 : Form
+    public partial class HistoricoCliente : Form
     {
-        public Form7()
+        public HistoricoCliente()
         {
             InitializeComponent();
-        }
-
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -43,13 +29,6 @@ namespace manutVeiculo
             {
                 this.Close();
             }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            var form11 = new Form11();
-            form11.ShowDialog();
-            //this.Close();
         }
     }
 }

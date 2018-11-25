@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form3
+    partial class OrdemServico
     {
         /// <summary>
         /// Required designer variable.
@@ -122,6 +122,7 @@
             this.btnVisualizar.TabIndex = 7;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // txtOs
             // 

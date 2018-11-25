@@ -7,32 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form9 : Form
+    public partial class OrdemServico : Form
     {
-        public Form9()
+        public OrdemServico()
         {
             InitializeComponent();
         }
 
-        private void Form9_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja cancelar essa operação?", "Confirmação",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
@@ -43,6 +29,24 @@ namespace manutVeiculo
             {
                 this.Close();
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja cancelar essa operação?", "Confirmação",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                //
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

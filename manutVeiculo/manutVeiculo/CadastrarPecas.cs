@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form6 : Form
+    public partial class CadastrarPecas : Form
     {
-        public Form6()
+        public CadastrarPecas()
         {
             InitializeComponent();
         }

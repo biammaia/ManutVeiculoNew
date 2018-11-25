@@ -1,6 +1,6 @@
 ﻿namespace manutVeiculo
 {
-    partial class Form2
+    partial class CadastrarCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@
             this.rbtnMasc = new System.Windows.Forms.RadioButton();
             this.rbtnFem = new System.Windows.Forms.RadioButton();
             this.lbSexo = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.lbNovoCpf = new System.Windows.Forms.Label();
             this.lbNovoNome = new System.Windows.Forms.Label();
             this.gpbEndereco = new System.Windows.Forms.GroupBox();
@@ -76,8 +76,8 @@
             this.gpbInfoPessoal.Controls.Add(this.rbtnMasc);
             this.gpbInfoPessoal.Controls.Add(this.rbtnFem);
             this.gpbInfoPessoal.Controls.Add(this.lbSexo);
-            this.gpbInfoPessoal.Controls.Add(this.textBox2);
-            this.gpbInfoPessoal.Controls.Add(this.textBox1);
+            this.gpbInfoPessoal.Controls.Add(this.txtCpf);
+            this.gpbInfoPessoal.Controls.Add(this.txtNome);
             this.gpbInfoPessoal.Controls.Add(this.lbNovoCpf);
             this.gpbInfoPessoal.Controls.Add(this.lbNovoNome);
             this.gpbInfoPessoal.Location = new System.Drawing.Point(12, 16);
@@ -118,19 +118,19 @@
             this.lbSexo.TabIndex = 7;
             this.lbSexo.Text = "Sexo: ";
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(53, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtCpf.Location = new System.Drawing.Point(53, 62);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(158, 20);
+            this.txtCpf.TabIndex = 6;
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(517, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtNome.Location = new System.Drawing.Point(53, 29);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(517, 20);
+            this.txtNome.TabIndex = 5;
             // 
             // lbNovoCpf
             // 
@@ -293,6 +293,7 @@
             this.btnCadastrar.TabIndex = 8;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnCancelarAdd
             // 
@@ -417,7 +418,7 @@
             this.lbModelo.Size = new System.Drawing.Size(48, 13);
             this.lbModelo.TabIndex = 1;
             this.lbModelo.Text = "Modelo: ";
-            this.lbModelo.Click += new System.EventHandler(this.lbModelo_Click);
+            
             // 
             // lbMarca
             // 
@@ -454,8 +455,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gpbInfoPessoal;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lbNovoCpf;
         private System.Windows.Forms.Label lbNovoNome;
         private System.Windows.Forms.GroupBox gpbEndereco;

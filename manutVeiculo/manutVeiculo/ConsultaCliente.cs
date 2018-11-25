@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace manutVeiculo
 {
-    public partial class Form11 : Form
+    public partial class ConsultaCliente : Form
     {
-        public Form11()
+        public ConsultaCliente()
         {
             InitializeComponent();
         }
@@ -31,6 +32,11 @@ namespace manutVeiculo
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form11_Load(object sender, EventArgs e)
         {
 
         }
