@@ -19,6 +19,7 @@ namespace manutVeiculo
         List<Pessoa> lista_pessoa;
         List<Veiculo> lista_veiculo;
         private Pessoa p;
+        private Veiculo v;
         private string sexo;
         private bool adicionado = false;
         private bool existe = false;//teste teste
@@ -31,23 +32,23 @@ namespace manutVeiculo
         public CadastrarCliente()
         {
             InitializeComponent();
-            //this.Text = "Adicionar Cliente";
             txtCpf.Text = "";
             txtNome.Text = "";
             rbtnMasc.Checked = false;
             rbtnFem.Checked = false;
             txtTelefone.Text = "";
-            txtCep.Text = "";
-            txtBairro.Text = "";
             txtRua.Text = "";
+            txtBairro.Text = "";
+            txtNro.Text = "";
+            txtCep.Text = "";
             txtCidade.Text = "";
             txtUf.Text = "";
-            txtNro.Text = "";
-            txtCor.Text = "";
+            txtMarca.Text = "";
+            txtModelo.Text = "";
+            cbboxCombustivel.SelectedIndex = 0;
             txtPlaca.Text = "";
             txtKmRodado.Text = "";
             txtAno.Text = "";
-            txtMarca.Text = "";
             lista_veiculo = veiculodao.ListAll();
             lista_pessoa = pessoadao.ListAll();
             btnCadastrar.Visible = true;
@@ -96,11 +97,11 @@ namespace manutVeiculo
 
             return cpf.EndsWith(Digito);
         }
-       
+
 
         private void btnCancelarAdd_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja sair sem salvar?", "Confirmação", 
+            if (MessageBox.Show("Deseja sair sem salvar?", "Confirmação",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 //
@@ -109,7 +110,7 @@ namespace manutVeiculo
             {
                 this.Close();
             }
-            
+
         }
 
 
@@ -121,19 +122,19 @@ namespace manutVeiculo
             }
             else
             {
-                if (txtCpf.Equals("") || txtNome.Text.Equals("") || txtTelefone.Equals("") || txtRua.Equals("") || txtBairro.Text.Equals("") || txtNro.Text.Equals("") || txtCep.Text.Equals("") || txtCidade.Text.Equals("") || txtUf.Text.Equals("") || (rbtnMasc.Checked == false && rbtnFem.Checked == false))
+                if (txtCpf.Equals("") || txtNome.Text.Equals("") || txtTelefone.Equals("") || txtRua.Equals("") || txtBairro.Text.Equals("") || txtNro.Text.Equals("") || txtCep.Text.Equals("") || txtCidade.Text.Equals("") || txtUf.Text.Equals("") || (rbtnMasc.Checked == false && rbtnFem.Checked == false) || txtMarca.Text.Equals("") || txtModelo.Text.Equals("") || cbboxCombustivel.Text.Equals("") || txtPlaca.Text.Equals("") || txtKmRodado.Text.Equals("") || txtAno.Text.Equals(""))
                 {
                     MessageBox.Show("É necessário preencher todos os dados!");
                 }
                 else
                 {
-                    
+
                     foreach (Pessoa p in lista_pessoa)
                         if (txtCpf.Text.Equals(p.cpf))
-                    {
+                        {
                             existe = true;
-                    }
-                    
+                        }
+
                     if (existe)
                     {
                         MessageBox.Show("CPF já existe no cadastro!");
@@ -143,7 +144,9 @@ namespace manutVeiculo
                         if (rbtnMasc.Checked) sexo = "masculino";
                         if (rbtnFem.Checked) sexo = "feminino";
                         p = new Pessoa(txtCpf.Text, txtNome.Text, sexo, txtTelefone.Text, txtRua.Text, txtBairro.Text, txtNro.Text, txtCep.Text, txtCidade.Text, txtUf.Text);
+                        v = new Veiculo(txtMarca.Text; txtModelo.Text; cbboxCombustivel.Text; txtPlaca.Text; txtKmRodado.Text; txtAno.Text);
                         pessoadao.Insert(p);
+                        veiculodao.Insert(v);
                         lista_pessoa = pessoadao.ListAll();
                         adicionado = true;
                         txtNome.Text = "";
@@ -153,13 +156,23 @@ namespace manutVeiculo
                         txtTelefone.Text = "";
                         txtRua.Text = "";
                         txtBairro.Text = "";
-                        txtNro.Text = "";                        
+                        txtNro.Text = "";
                         txtCep.Text = "";
                         txtCidade.Text = "";
                         txtUf.Text = "";
+                        txtMarca.Text = "";
+                        txtModelo.Text = "";
+                        cbboxCombustivel.SelectedIndex = 0;
+                        txtPlaca.Text = "";
+                        txtKmRodado.Text = "";
+                        txtAno.Text = "";
                         Close();
                         existe = false;
                     }
                 }
-    
+
+            }
+
+        }
+    }   
 }
