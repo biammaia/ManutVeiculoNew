@@ -59,6 +59,12 @@ namespace manutVeiculo
             var form9 = new HistoricoVeiculo();
             form9.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cadastrarVeiculo = new CadastrarVeiculo();
+            cadastrarVeiculo.ShowDialog();
+        }
     }
     
 }
