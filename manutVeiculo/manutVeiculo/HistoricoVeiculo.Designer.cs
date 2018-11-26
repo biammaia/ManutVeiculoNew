@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.Peça = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Km = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.peca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.km = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Proprietário = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.proprietario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,10 +44,10 @@
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Peça,
-            this.Km,
+            this.peca,
+            this.km,
             this.data,
-            this.Proprietário});
+            this.proprietario});
             this.listView1.Location = new System.Drawing.Point(26, 136);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(703, 407);
@@ -56,25 +56,25 @@
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // Peça
+            // peca
             // 
-            this.Peça.Text = "Peça";
-            this.Peça.Width = 189;
+            this.peca.Text = "Peça";
+            this.peca.Width = 189;
             // 
-            // Km
+            // km
             // 
-            this.Km.Text = "Km";
-            this.Km.Width = 139;
+            this.km.Text = "Km";
+            this.km.Width = 139;
             // 
             // data
             // 
             this.data.Text = "Data";
             this.data.Width = 134;
             // 
-            // Proprietário
+            // proprietario
             // 
-            this.Proprietário.Text = "Proprietário";
-            this.Proprietário.Width = 235;
+            this.proprietario.Text = "Proprietário";
+            this.proprietario.Width = 235;
             // 
             // label1
             // 
@@ -126,14 +126,14 @@
             this.gbHistVeiculo.TabStop = false;
             this.gbHistVeiculo.Text = "Histórico do Veículo";
             // 
-            // Form9
+            // HistoricoVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 594);
             this.Controls.Add(this.gbHistVeiculo);
             this.MaximizeBox = false;
-            this.Name = "Form9";
+            this.Name = "HistoricoVeiculo";
             this.Text = "Consulta Histórico do Veículo";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.gbHistVeiculo.ResumeLayout(false);
@@ -144,10 +144,10 @@
 
         #endregion
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Peça;
-        private System.Windows.Forms.ColumnHeader Km;
+        private System.Windows.Forms.ColumnHeader peca;
+        private System.Windows.Forms.ColumnHeader km;
         private System.Windows.Forms.ColumnHeader data;
-        private System.Windows.Forms.ColumnHeader Proprietário;
+        private System.Windows.Forms.ColumnHeader proprietario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;

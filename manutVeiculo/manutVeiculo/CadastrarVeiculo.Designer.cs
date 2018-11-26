@@ -177,6 +177,7 @@
             this.btnCadastrar.TabIndex = 12;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnCancelarAdd
             // 
@@ -186,6 +187,7 @@
             this.btnCancelarAdd.TabIndex = 13;
             this.btnCancelarAdd.Text = "Cancelar";
             this.btnCancelarAdd.UseVisualStyleBackColor = true;
+            this.btnCancelarAdd.Click += new System.EventHandler(this.btnCancelarAdd_Click);
             // 
             // CadastrarVeiculo
             // 

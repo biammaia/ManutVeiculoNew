@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace manutVeiculo
 {
-    public partial class CadastrarVeiculo : Form
+    public partial class ConsultarOS : Form
     {
-        public CadastrarVeiculo()
+        public ConsultarOS()
         {
             InitializeComponent();
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancelarAdd_Click(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

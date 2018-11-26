@@ -69,6 +69,12 @@
     <Compile Include="CadastrarVeiculo.Designer.cs">
       <DependentUpon>CadastrarVeiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaOS.Designer.cs">
+      <DependentUpon>ConsultaOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="PaginaInicial.cs">
       <SubType>Form</SubType>
@@ -124,6 +130,9 @@
     <Compile Include="Veiculo.cs" />
     <EmbeddedResource Include="CadastrarVeiculo.resx">
       <DependentUpon>CadastrarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaOS.resx">
+      <DependentUpon>ConsultaOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaInicial.resx">
       <DependentUpon>PaginaInicial.cs</DependentUpon>

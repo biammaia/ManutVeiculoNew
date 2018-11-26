@@ -117,6 +117,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "Consultar O.S.";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Inicio
             // 
