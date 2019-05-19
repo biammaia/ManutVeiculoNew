@@ -28,7 +28,7 @@ namespace manutVeiculo
             if (MessageBox.Show("Deseja cancelar essa operação?", "Confirmação",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
-                //
+                
             }
             else
             {
